@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- Link the stylesheet -->
+		<link rel="stylesheet" href="style.css">
+		
+		<!-- Set the title of the tab -->
+		<title>Links & Images</title>
+
+		<!-- Set the colour palette of this website -->
+		<style>
+			body { background-color: #EFD9CE; color: #955FCF; }
+			#navbar { background-color: #957FEF; }
+			#navbar a div { background-color: #DEC0F1; color: #5141AF; }
+			#navbar a div:hover { background-color: #B79CED; }
+			h1 { color: #6161DF; }
+			h2 { color: #7161EF; }
+		</style>
+	</head>
+
+	<body>
+
+		<!-- Navigation Bar -->
+		<div id="navbar">
+
+			<!-- Links to each page -->
+			<a href="index.html"><div>Webpages Intro</div></a>
+			<a href="HTML.html"><div>HTML Basics</div></a>
+			<a href="CSS.html"><div>CSS Basics</div></a>
+			<a href="T_F.html"><div>Text & Formatting</div></a>
+			<a href="L_I.html"><div>Links & Images</div></a>
+			<a href="D_P.html"><div>Dividers & Positioning</div></a>
+			<a href="Sources.html"><div>Sources</div></a>
+		</div>
+
+		<!-- Title of the page -->
+		<h1>Links and Images</h1>
+
+		<!-- Section 1 -->
+		<h2>How do you make links?</h2>
+		
+		<p>
+			In HTML, a link is any element or elements surrounded by an <code>&lt;a&gt;&lt;/a&gt;</code> tag.
+			The starting tag should have an <code>href</code> attribute, which should be set to the value of
+			the website's URL, or if you have another HTML file on your computer, if can link to that file
+			path instead. That's all you need!
+		</p>
+
+		<p>
+			You can put link tags around text, around images, and even around <a href="D_P.html">dividers</a>,
+			which will be covered in the next section. In fact, the navigation bar at the top of this screen uses
+			<code>&lt;a&gt;&lt;/a&gt;</code> tags in order to link to the other webpages on this site, so that you
+			can move between pages without any issues.
+		</p>
+
+		<!-- Section 2 -->
+		<h2>How do you make images?</h2>
+
+		<p>
+			To add an image to your website, you use the <code>&lt;img&gt;</code> tag. This is an empty tag, it has no
+			end tag, and is only one line. It requires an <code>src</code> attribute to work, which, similarly to a link, 
+			can take an image from a url or from a file path.
+		</p>
+
+		<!-- Just a pretty picture, not related to the content, but simply showing an image can be rendered on screen -->
+		<img width="80%" src="res/images/landscape.jpg" alt="A landscape picture of trees with red leaves in the foreground, with a lake and a mountain in the background" />
+
+		<p>
+			You can specify the width and height attributes using the <code>width</code> and <code>height</code> commands
+			in CSS, or by the attributes with the same name inside the tag itself. If you only specify one measurement, the
+			other will automatically resize to keep the original ratio of the image. Also, the <code>alt</code> attribute
+			can be used to display text if the image does not properly load, or for text-to-speech programs to describe the
+			image.
+		</p>
+		
+		<!-- Section 3 -->
+		<h2>How do you add a video?</h2>
+
+		<p>
+			You can add a video to your website using the <code>&lt;video&gt;&lt;/video&gt;</code> tags. Inside the tags, 
+			you can add <code>&lt;source&gt;&lt;/source&gt;</code> tags to add a video file, and any text inside the video
+			tags will be used in the same way as the <code>alt</code> attribute is used for images. Also, adding the attribute
+			<code>controls</code> without any value just allows the reader to play and pause the video, as well as adjust the
+			volume and skip to any time they would like.
+		</p>
+
+		<!-- Video of Mrs. Dufault's instructions for this website assignment -->
+		<video width="640" controls>
+ 			<source src="res/images/video.mp4" type="video/mp4">
+			Mrs. Dufault explains this assignment in a short video.
+		</video>
+		
+		<p>
+			The code to display the above video is:
+		</p>
+
+		<!-- Screenshot of the code for adding the video to the website -->
+		<img width="50%" src="res/images/videocode.jpg" alt="&lt;video width=&quot;640&quot; controls&gt; &lt;source src=&quot;res/images/video.mp4&quot; type=&quot;video/mp4&quot;&gt; Mrs. Dufault explains this assignment. &lt;/video&gt;" />
+
+		<p>
+			(res/images/video.mp4 is the path to the video file)
+		</p>
+
+	</body>
+
+</html>

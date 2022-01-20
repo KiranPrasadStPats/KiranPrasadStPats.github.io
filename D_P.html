@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- Link the stylesheet -->
+		<link rel="stylesheet" href="style.css">
+		
+		<!-- Set the title of the tab -->
+		<title>Dividers & Positioning</title>
+
+		<!-- Set the colour palette of this website -->
+		<style>
+			body { background-color: #461220; color: #FED0BB; }
+			#navbar { background-color: #8C2F39; }
+			#navbar a div { background-color: #FCB9B2; color: black; }
+			#navbar a div:hover { background-color: #F28A68; }
+			h1 { color: #F26A48; }
+			h2 { color: #C25A68; }
+		</style>
+	</head>
+
+	<body>
+
+		<!-- Navigation Bar -->
+		<div id="navbar">
+
+			<!-- Links to each page -->
+			<a href="index.html"><div>Webpages Intro</div></a>
+			<a href="HTML.html"><div>HTML Basics</div></a>
+			<a href="CSS.html"><div>CSS Basics</div></a>
+			<a href="T_F.html"><div>Text & Formatting</div></a>
+			<a href="L_I.html"><div>Links & Images</div></a>
+			<a href="D_P.html"><div>Dividers & Positioning</div></a>
+			<a href="Sources.html"><div>Sources</div></a>
+		</div>
+
+		<!-- Title of the page -->
+		<h1>Dividers and Positioning</h1>
+
+		<!-- Section 1 -->
+		<h2>What are dividers?</h2>
+		
+		<p>
+			In HTML, a divider is a section of a webpage. It is created using the <code>&lt;div&gt;&lt;/div&gt;</code>
+			tags. However, when used by itself, it does not affect the webpage in any way, shape or form. Despite this,
+			the <em>div</em> element is far from useless; it truly shines when it is combined with CSS. There are many
+			things you can do with dividers: it becomes easy to make block-layout webpages, to have blocks of information
+			surrounded by other website content, to position groups of elements together, and even to create more complicated
+			structures such as navigation bars, carousels, and so much more!
+		</p>
+
+		<!-- Image of div element positions -->
+		<img width="40%" src="res/images/divs.jpg" alt="An example of div elements in a block layout" />
+
+		<p>
+			Anything can go inside a div element, including another div. The main reasons why the div element is so valuable when
+			it comes to performing complex tasks is because it can treat many elements as if they were one element, and because they
+			can be easily positioned around the website while they contain those elements!
+		</p>
+
+		<!-- Section 2 -->
+		<h2>How do you position elements?</h2>
+
+		<p>
+			Positioning elements is easiest done through CSS, where there are several options. One easy way to position items is to 
+			use the <code>float</code> command, which can take values such as <code>center</code> or <code>left</code>. You can also
+			use the <code>margin-left</code> and <code>margin-right</code> commands to move an element that has the property <code>display:
+			block;</code> a certain distance away from the right or left edges of the webpage. The <code>text-align</code> command uses
+			similar values as the <code>float</code> command, except it is applied to the child elements of the applied tag as well (despite
+			being named text-align, it works on non-text elements as well!). This is a useful tool to use alongside the HTML <strong>div</strong> 
+			element, to apply the position to the elements within it.
+		</p>
+
+		<p>
+			Additionally, there is a tag in CSS called <code>position</code> which can be a very powerful tool. For example, for the navigation
+			bar to follow the screen and always stick to the top of the page, the command <code>position: sticky</code> is used, in conjunction with
+			<code>top: 0px;</code> in order to specify which edge the element should stick to, and how close it should be to start moving. Another notable
+			option is <code>position: absolute;</code>, which allows you to place an element anywhere on the page, precisely, by specifying the distance it
+			must be from the edges of the page, in space, not just the scrolling view of the page. 
+		</p>
+
+		<!-- Image of different CSS positioning examples -->
+		<img width="50%" src="res/images/position.jpg" alt="Some examples of CSS positioning" />
+
+		<p>
+			Finally, some powerful tools in getting the delicate spacing of elements right are the <code>margin</code> and <code>padding</code> commands. The margin
+			command is used to determine how far away the element should push other elements from its border. You can set each side individually if you wish to do so.
+			The padding command is mainly used with div elements, as it controls the space between the border of the div and the content inside it - basically the
+			reverse of the margin command.
+		</p>
+
+		<!-- Image of the box diagram model to visualize margins and padding -->
+		<img width="50%" src="res/images/spacing.jpg" alt="The box model of HTML. This diagram shows how padding is space outside the element, while padding is space inside the element" />
+
+		<p>
+			With many tools for positioning, it can be overwhelming and difficult at times. However, this vast customizability can lead to very intricate and modern-looking websites!
+		</p>
+
+	</body>
+
+</html>

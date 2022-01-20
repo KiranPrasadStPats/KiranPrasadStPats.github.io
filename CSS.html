@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- Link the stylesheet -->
+		<link rel="stylesheet" href="style.css">
+		
+		<!-- Set the title of the tab -->
+		<title>CSS Basics</title>
+
+		<!-- Set the colour palette of this website -->
+		<style>
+			body { background-color: #631A86; color: #F49390; }
+			#navbar { background-color: #A2666F; }
+			#navbar a div { background-color: #F49390; color: black; }
+			#navbar a div:hover { background-color: #F45866; }
+			h1 { color: #E98DF8; }
+			h2 { color: #D47AB3; }
+			a:visited { color: #0000EE; }
+		</style>
+	</head>
+
+	<body>
+
+		<!-- Navigation Bar -->
+		<div id="navbar">
+
+			<!-- Links to each page -->
+			<a href="index.html"><div>Webpages Intro</div></a>
+			<a href="HTML.html"><div>HTML Basics</div></a>
+			<a href="CSS.html"><div>CSS Basics</div></a>
+			<a href="T_F.html"><div>Text & Formatting</div></a>
+			<a href="L_I.html"><div>Links & Images</div></a>
+			<a href="D_P.html"><div>Dividers & Positioning</div></a>
+			<a href="Sources.html"><div>Sources</div></a>
+		</div>
+
+		<!-- Title of the page -->
+		<h1>CSS Basics</h1>
+
+		<!-- Section 1 -->
+		<h2>What is CSS?</h2>
+		
+		<p>
+			CSS, which stands for <strong>Cascading Style Sheets</strong>, is a
+			coding language that is used alongside your HTML code in order to add, 
+			as the name suggests, <strong>style</strong> to your website. CSS controls
+			many visual aspects of your website, including colours, fonts, sizes,
+			and many more specific adjustments that can be used to fine-tune your website
+			into looking exactly how you envision it to be.
+		</p>	
+
+		<!-- Image of a spiral of colours -->
+		<img width="50%" src="res/images/colourful.jpg" alt="Image of a spiral of colours" />
+
+		<!-- Section 2 -->
+		<h2>How do you code in CSS?</h2>
+		
+		<p>
+			To code in CSS, there are three steps. You must <u>define the HTML tag or tags
+			that you want to apply the change to</u>, you must <u>choose which command you want
+			to use</u>, and you must <u>specify its value</u>.
+		</p>
+
+		<p>
+			There are three ways to add CSS to your HTML website. Firstly, you can add what is
+			called <em>inline CSS</em> to any empty or starting tag. This is because each HTML
+			tag has specific <strong>attributes</strong> that can be set for it, and every tag
+			has the <code>style</code> attribute, which is where you can type CSS code. For example,
+			the following HTML tag uses inline CSS:
+		</p>
+
+		<!-- Code segment for a header coloured red using inline CSS -->
+		<code>
+			&nbsp;&nbsp;&lt;h1 style="color: red;"&gt;This is a header&lt;/h1&gt;
+		</code>
+
+		<p>
+			For the above example, the header tag has a style attribute, which sets its colour to
+			<span style="color: red;">red</span>. The tag the CSS applies to is only the tag with the
+			attribute, and no others. The command used is <code>color</code>, which sets the colour of
+			the element. Finally, the value of the CSS command is <code>red</code>, which means that the
+			color of the specified element, in this case the header, is red.
+		</p>
+
+		<p>
+			In the other two methods, choosing a command and its value is the same:
+		</p>
+
+		<!-- Code segment for a template of a CSS command -->
+		<code>
+			&nbsp;&nbsp;<em>command</em>: <em>value</em>;
+		</code>
+
+		<p>
+			However, to select the tag or tags you want to edit, you must write the tag name, followed
+			by curly brackets <code>{}</code>. Anything in the curly brackets will be applied to every tag
+			of the type listed before the brackets. For example, this is an example of CSS code;
+		</p>
+
+		<!-- Code segment for all paragraphs being centered using CSS -->
+		<code>
+			&nbsp;&nbsp;p {							<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;			<br>
+			&nbsp;&nbsp;}
+		</code>
+
+		<p>
+			For the above example, every paragraph element will have its text alignment centered. This
+			type of CSS command can be used inside the HTML <code>&lt;style&gt;&lt;/style&gt;</code> tags,
+			in which case it is only applied to the HTML file it is in. Finally, you can make a <code>.css</code>
+			file, where you write only in CSS, and then you can apply the CSS commands to any HTML file by using
+			the command:
+		</p>
+
+		<!-- Code segment for an external stylesheet being linked into an HTML document -->
+		<code>
+			&nbsp;&nbsp;&lt;link rel="stylesheet" href="style.css"&gt;
+		</code>
+
+		<p>
+			where <strong>style.css</strong> can be replaced by the name of your CSS file.
+		</p>
+	</body>
+
+</html>

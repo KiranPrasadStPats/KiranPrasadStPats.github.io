@@ -1,0 +1,111 @@
+/* Importing a custom font for normal text (font 1/2) */
+@font-face {
+  font-family: 'NK57';
+  src: url('res/fonts/nk57-monospace-sc-bk.woff') format('woff'), /* Pretty Modern Browsers */
+       url('res/fonts/nk57-monospace-sc-bk.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+/* Importing a custom font for code blocks and examples (font 2/2) */
+@font-face {
+  font-family: 'CutiveMono';
+  src: url('res/fonts/Cutive Mono-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('res/fonts/CutiveMono-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+#navbar {
+	/* Control the look of the navbar */
+	display: inline-block;
+	padding: 0.5%;
+	text-align: center;
+
+	/* Make it span the width of the site */
+	width: 100vw;
+	margin: -20px;
+
+	/* Keep it at the top of the screen */
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	
+}
+
+#navbar a {
+	/* Center the link text and don't underline them */
+	text-align: center;
+	text-decoration: none;
+}
+
+#navbar a div {
+	/* Control the look of the option boxes in the navbar */
+	display: inline-block;
+	height: 80%;
+	margin: 0.5% 0px;
+
+	/* Center them */
+	text-align: center;
+	float: center;
+
+	/* Control the look of the text inside */
+	font-size: 1em;
+	padding: 1%;
+	
+}
+
+body {
+	/* Apply the custom font to all text inside the body of the webpage by default */
+	font-family: 'NK57', Fallback, sans-serif;
+
+	/* Correct the odd spacing caused by the navbar */
+	padding-left: 10px;
+}
+
+code {
+	/* Apply the custom code block font to all text inside the code tags */
+	font-family: 'CutiveMono', Fallback, monospace;
+}
+
+h1 {
+	/* Make all h1's very large and centered */
+	font-size: 3em;
+	text-align: center;
+}
+
+h2 {
+	/* Make all h2's somewhat large and underlined */
+	font-size: 2em;
+	text-decoration: underline;
+}
+
+img {
+	/* Center all images */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+video {
+	/* Center all videos */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th, td {
+	/* Apply a border around the table elements */
+	border: 1px solid black;
+
+	/* Center the text inside each cell */
+	text-align: center;
+	padding: 1%;
+}
+  
+table {
+	/* Apply a border around the outside edge of the table */
+	border: 1px solid black;
+
+	/* Make the table fill the screen lengthwise */
+	width: 100%;
+
+	/* Make there only be one line separating each element */
+	border-collapse: collapse;
+}

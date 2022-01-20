@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- Link the stylesheet -->
+		<link rel="stylesheet" href="style.css">
+		
+		<!-- Set the title of the tab -->
+		<title>Text &amp; Formatting</title>
+
+		<!-- Set the colour palette of this website -->
+		<style>
+			body { background-color: #26532B; color: #5ABCB9; }
+			#navbar { background-color: #399E5A; }
+			#navbar a div { background-color: #69BE7A; color: black; }
+			#navbar a div:hover { background-color: #99EEAA; }
+			h1 { color: #63E2C6; }
+			h2 { color: #6EF9F5; }
+		</style>
+	</head>
+
+	<body>
+
+		<!-- Navigation Bar -->
+		<div id="navbar">
+
+			<!-- Links to each page -->
+			<a href="index.html"><div>Webpages Intro</div></a>
+			<a href="HTML.html"><div>HTML Basics</div></a>
+			<a href="CSS.html"><div>CSS Basics</div></a>
+			<a href="T_F.html"><div>Text & Formatting</div></a>
+			<a href="L_I.html"><div>Links & Images</div></a>
+			<a href="D_P.html"><div>Dividers & Positioning</div></a>
+			<a href="Sources.html"><div>Sources</div></a>
+		</div>
+
+		<!-- Title of the page -->
+		<h1>Text and Formatting</h1>
+
+		<!-- Section 1 -->
+		<h2>How do you make text?</h2>
+		
+		<p>
+			In HTML, any text that's not a tag and not CSS in the style tags is considered text, 
+			and in most cases it can be written to the screen no matter where it is in the
+			HTML code. However, this is considered very bad practice, and it can make it a nightmare
+			to use CSS and make the website look presentable. Therefore, there are tags we can use
+			to put the text inside them on the screen, with different qualities.
+		</p>
+
+		<p>
+			The main HTML tags used to contain text are headers 1 <code>&lt;h1&gt;&lt;/h1&gt;</code> to
+			6 <code>&lt;h6&gt;&lt;/h6&gt;</code>, and the paragraph tag <code>&lt;p&gt;&lt;/p&gt;</code>.
+		</p>
+
+		<!-- Section 1 -->
+		<h2>What about making your text fancy?</h2>
+
+		<p>
+			To add extra effects to your text, you can use the <code>&lt;em&gt;&lt;/em&gt;</code> tags for
+			<em>italics</em>, <code>&lt;strong&gt;&lt;/strong&gt;</code> for <strong>bold</strong>, and 
+			<code>&lt;u&gt;&lt;/u&gt;</code> tags for <u>underline</u>.
+		</p>
+
+		<p>
+			This can also be done in CSS: <code>font-style: italic;</code> for <em>italicized</em> text, 
+			<code>font-weight: bold;</code> for <strong>bolded</strong> text, and <code>text-decoration: underline;</code>
+			for <u>underlined</u> text. <span style="color: #00FF00;">Additionally, text colour can be set using the <code>color:</code> command,
+			and the value can be one of the 140 predefined colours in CSS, or an RGB or a Hex value if you
+			want to be able to better control the shade of the colour.</span> Finally, the font size can be increased
+			using the <code>font-size</code> command, which can take values in many units. Using the unit <em>em</em> is
+			the most recommended, as it is a factor of the pase paragraph size, which is 1em, and therefore scales well.
+		</p>
+
+		<!-- Image of a capital and lowercase T, which is the logo for font size, one type of text stylization -->
+		<img width="20%" src="res/images/fontsize.jpg" alt="Font size logo, as an example of text stylization" />
+
+		<p>
+			Special characters can also be added in HTML. To add a special character in text, you must start
+			with an ampersand, then enter the code specific to that character, and then end with a semicolon.
+			For example, if you were to type a greater than or less than bracket in HTML, it would automatically
+			be considered as the start or end of a tag, and would cause an error. Therefore, you must use the
+			special characters: <code>&amp;lt;</code> for less than and <code>&amp;gt;</code> for greater than.
+			You can add emojis to your text as well, as long as you know their specific codes, which you can find
+			through a quick Google search. For example, &#9889; is <code>&amp;#9889;</code>, and &#9875; is 
+			<code>&amp;#9875;</code>.
+		</p>
+		
+		<!-- Image of an array of different emojis -->
+		<img width="60%" src="res/images/emojis.png" alt="An array of emojis" />
+
+	</body>
+
+</html>
